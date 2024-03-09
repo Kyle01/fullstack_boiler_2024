@@ -45,12 +45,12 @@ DB_CONNECTION_URL=**Postgres required connection url. If you're using Render, pr
 SECRET_HASH=**Your own secret hash. This will be used also in Vercel. 
 DEPLOY_MODE=Prod. self explanatory 
 ```
-6. Click `Create Web Service` button at the bottom. 
+6. Click 'Create Web Service' button at the bottom. 
 7. Once it is deployed, you'll see your production url at the top. Try it our by navigating your browser to `<your-url>` and you should see a Hello World Message! 
 #### Frontend
 1. Next we'll do the frontend with Vercel. Navigate to [Vercel](https://vercel.com/), make an account, and navigate to [your dashboard](https://vercel.com/dashboard). 
 2. Find the 'Add New Project' Button and select your associated github repo from the list. 
-3. Select 'Next.JS` for the Framework Present, and change the root direct to /web-app
+3. Select `Next.JS` for the Framework Present, and change the root direct to `/web-app/`
 4. There are 3 environment variables you'll need to provide. See the descriptions below: 
 ```
 SECRET=**Your own secret hash. This is the same hashed secret used in Render land. 
@@ -60,5 +60,5 @@ GOOGLE_CLIENT_SECRET=** Another detail from Oauth. See details below.
 I used Google as my OAuth provider. [Next Auth](https://next-auth.js.org/providers/) has a ton of providers, I used Google. You should follow the documentation on [NextAuth](https://next-auth.js.org/providers/google) if you decide to go down this route. But you'll be unable to complete this step until you've actually launched your site and have a hosted URL. 
 
 5. Click Deploy and visit your site on the provided URL. You should see the basic elements and a Log in button.
-6. Provide the host URL and other details to your OAuth provider. Go back and provide the client_id and client_secret to your environment variables. 
+6. Provide the host URL and other details to your OAuth provider. Go back to vercel and add the client_id and client_secret from Google to your environment variables. 
 7. Test login, query the backend, and you're ready to go! 
